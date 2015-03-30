@@ -1,0 +1,20 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+mquandalle:jade
+less
+accounts-ui
+accounts-github
+nemo64:bootstrap
+iron:router
+meteorhacks:fast-render
+natestrauser:x-editable-bootstrap
+linto:jquery-ui
+sanjo:jasmine@0.11.0
+velocity:html-reporter@0.4.1
+clinical:nightwatch
+natestrauser:font-awesome

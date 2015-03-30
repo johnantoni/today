@@ -1,0 +1,28 @@
+template(name="taskList")
+  .row
+    .col-xs-12
+      h3
+        Tasks
+  if currentUser
+    .row
+      .col-xs-12
+        form.form-inline(id="new-task")
+          .form-group
+            input.form-control(type="text" name="name" placeholder="Task...")
+            button.btn.btn-default(type="submit") Create
+    .row
+      .col-xs-12
+        hr
+    .row
+      .col-xs-12
+        ul.list-group
+          each currentTasks
+            +taskItem
+    .row
+      .col-xs-12
+        hr
+    .row
+      .col-xs-12
+        ul.list-group
+          each completedTasks
+            +taskItem

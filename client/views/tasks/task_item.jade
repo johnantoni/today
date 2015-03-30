@@ -1,0 +1,7 @@
+template(name="taskItem")
+  li(class="list-group-item {{stateClass}}" data-id="{{_id}}")
+    strong
+      = name
+    input(type="button" value="Delete" class="delete")
+    unless done
+      input(type="button" value="Done" class="done")
